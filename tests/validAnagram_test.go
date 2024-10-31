@@ -18,7 +18,7 @@ func TestValidAnagram(t *testing.T) {
 	for _, tt := range tests {
 		got := arrays.ValidAnagram(tt.s, tt.t)
 		if got != tt.want {
-			t.Errorf("HasDuplicate(%v, %v) = %v, want %v", tt.s, tt.t, got, tt.want)
+			t.Errorf("ValidAnagram(%v, %v) = %v, want %v", tt.s, tt.t, got, tt.want)
 		}
 	}
 }

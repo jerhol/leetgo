@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	arrays "leetgo/arrays"
+	"leetgo/arrays"
 )
 
 func TestTwoSum(t *testing.T) {
