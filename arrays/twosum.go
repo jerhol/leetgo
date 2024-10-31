@@ -1,4 +1,4 @@
-package twosum
+package arrays
 
 func TwoSum(nums []int, target int) []int {
 	lookup := make(map[int]int)

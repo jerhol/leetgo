@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	twosum "leetgo/arrays"
+	arrays "leetgo/arrays"
 )
 
 func TestTwoSum(t *testing.T) {
@@ -19,7 +19,7 @@ func TestTwoSum(t *testing.T) {
 	}
 
 	for _, tt := range tests {
-		got := twosum.TwoSum(tt.nums, tt.target)
+		got := arrays.TwoSum(tt.nums, tt.target)
 		if !reflect.DeepEqual(got, tt.want) {
 			t.Errorf("TwoSum(%v, %d) = %v, want %v", tt.nums, tt.target, got, tt.want)
 		}
