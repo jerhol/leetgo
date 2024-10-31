@@ -7,17 +7,17 @@ import (
 
 func TestHasDuplicate(t *testing.T) {
 	tests := []struct {
-		input []int
-		want  bool
+		nums []int
+		want bool
 	}{
 		{[]int{0, 1, 2, 3, 4, 3}, true},
 		{[]int{0, 1, 2, 3, 4, 5}, false},
 	}
 
 	for _, tt := range tests {
-		got := arrays.HasDuplicate(tt.input)
+		got := arrays.HasDuplicate(tt.nums)
 		if got != tt.want {
-			t.Errorf("HasDuplicate(%v) = %v, want %v", tt.input, got, tt.want)
+			t.Errorf("HasDuplicate(%v) = %v, want %v", tt.nums, got, tt.want)
 		}
 	}
 }
