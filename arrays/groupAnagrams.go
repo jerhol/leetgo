@@ -1,24 +1,20 @@
 package arrays
 
-import "fmt"
-
 // Time: O(m * n)
 // Space: O(m)
 func GroupAnagrams(strs []string) [][]string {
-	sMap := make(map[string][]string)
+	sMap := map[[26]int][]string{}
 
 	for _, str := range strs {
-		count := make([]int, 26)
+		count := [26]int{}
 		for _, char := range str {
-			count[char-'a']++
+			count[char-'a'] += 1
 		}
 
-		key := fmt.Sprintf("%v", count)
-
-		sMap[key] = append(sMap[key], str)
+		sMap[count] = append(sMap[count], str)
 	}
 
-	var res [][]string
+	res := [][]string{}
 	for _, group := range sMap {
 		res = append(res, group)
 	}
