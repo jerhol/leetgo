@@ -2,6 +2,7 @@ package arrays
 
 // Time: O(m * n)
 // Space: O(m)
+
 func GroupAnagrams(strs []string) [][]string {
 	sMap := map[[26]int][]string{}
 

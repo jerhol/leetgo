@@ -1,5 +1,8 @@
 package arrays
 
+// Time: O(n)
+// Space: O(n)
+
 func TopKFrequent(nums []int, k int) []int {
 	count := make(map[int]int)
 	freq := make([][]int, len(nums)+1)

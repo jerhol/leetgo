@@ -1,5 +1,8 @@
 package arrays
 
+// Time: O(n)
+// Space: O(n)
+
 func TwoSum(nums []int, target int) []int {
 	lookup := make(map[int]int)
 	for i, num := range nums {

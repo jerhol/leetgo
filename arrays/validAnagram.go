@@ -1,5 +1,8 @@
 package arrays
 
+// Time: O(n)
+// Space: O(1)
+
 func ValidAnagram(s string, t string) bool {
 	if len(s) != len(t) {
 		return false
